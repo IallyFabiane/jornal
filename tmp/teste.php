@@ -24,8 +24,13 @@
             print(TOTAL . " ");/*1ª forma de escrever constantes*/
 
             const TOTAL2 = 200;
-            echo  "<br> " . TOTAL2; /*2ª forma de escrever constantes*/
+            echo  "<br> " . TOTAL2 ."<br> "; /*2ª forma de escrever constantes*/
         
+            $a = 1;
+            echo gettype($a) . "<br>";
+
+            $a = (double)1;
+            echo gettype($a) . "<br>";
         ?>
     </body>
 </html>
