@@ -49,6 +49,21 @@
             echo !($num1 < $num2). " "; /*operação de negação*/
             echo ($num1 < $num2) && ($num1 > $num2)  . " "; /*operador AND*/
             echo ($num1 < $num2) || ($num1 > $num2)  . " "; /*operador OR*/
+
+            if ($num1 > $num2) {
+                echo '<font color="red">';
+                echo '<br>Num1 é maior que num2.';
+                echo '</font>';
+            } elseif ($num1 < $num2) {
+                echo '<font color="red">';
+                echo '<br>Num1 é menor que num2.';
+                echo '</font>';
+            } else {
+                echo '<font color="red">';
+                echo '<br>Num1 não é  menor nem maior que num2.';
+                echo '</font>';
+            }
+           
         ?>
     </body>
 </html>
