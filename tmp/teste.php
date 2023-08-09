@@ -63,6 +63,15 @@
                 echo '<br>Num1 não é  menor nem maior que num2.';
                 echo '</font>';
             }
+
+            switch ($num1) {
+                case 1:
+                    echo '<br>O valor de num1 é 1.';
+                    break;
+                default:
+                    echo 'Fim...';
+                    break;
+            }
            
         ?>
     </body>
