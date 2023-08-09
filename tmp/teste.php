@@ -35,11 +35,18 @@
             $num1 = 1;
             $num2 = 2;
 
-            echo $num1 + $num2 . " "; /*opercção de adição*/
-            echo $num1 - $num2 . " "; /*opercção de subtração*/
-            echo $num1 * $num2 . " "; /*opercção de multiplicação*/
-            echo $num1 / $num2 . " "; /*opercção de divisão*/
-            echo $num1 % $num2 . " "; /*opercção de divisão*/
+            echo $num1 + $num2 . " "; /*operação de adição*/
+            echo $num1 - $num2 . " "; /*operação de subtração*/
+            echo $num1 * $num2 . " "; /*operação de multiplicação*/
+            echo $num1 / $num2 . " "; /*operação de divisão*/
+            echo $num1 % $num2 . " "; /*operação de divisão*/
+            echo $num1 == $num2 . " "; /*operação de igualdade*/
+            echo $num1 != $num2 . " "; /*operação de desigualdade*/
+            echo $num1 >= $num2 . " "; /*operação de comparação*/
+            echo $num1 <= $num2 . " "; /*operação de comparação*/
+            echo $num1 > $num2 . " "; /*operação de comparação*/
+            echo $num1 < $num2 . " "; /*operação de comparação*/
+            echo !($num1 < $num2). " "; /*operação de negação*/
         ?>
     </body>
 </html>
