@@ -47,6 +47,8 @@
             echo $num1 > $num2 . " "; /*operação de comparação*/
             echo $num1 < $num2 . " "; /*operação de comparação*/
             echo !($num1 < $num2). " "; /*operação de negação*/
+            echo ($num1 < $num2) && ($num1 > $num2)  . " "; /*operador AND*/
+            echo ($num1 < $num2) || ($num1 > $num2)  . " "; /*operador OR*/
         ?>
     </body>
 </html>
