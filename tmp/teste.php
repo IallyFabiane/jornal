@@ -31,6 +31,15 @@
 
             $a = (double)1;
             echo gettype($a) . "<br>";
+
+            $num1 = 1;
+            $num2 = 2;
+
+            echo $num1 + $num2 . " "; /*opercção de adição*/
+            echo $num1 - $num2 . " "; /*opercção de subtração*/
+            echo $num1 * $num2 . " "; /*opercção de multiplicação*/
+            echo $num1 / $num2 . " "; /*opercção de divisão*/
+            echo $num1 % $num2 . " "; /*opercção de divisão*/
         ?>
     </body>
 </html>
