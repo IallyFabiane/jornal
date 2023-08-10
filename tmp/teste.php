@@ -82,7 +82,7 @@
             $arr = array("a", "b", "c"); /*pode ser escrito também assim: $arr = [elements] */
             $arr[] = "d";
             $arr[4] = "e";
-            $arr1 = array("id"=> 1, "nome"=>"Ially");
+            $arr1 = array("id"=> 1, "nomes"=>array("Ially", "Fabiane"));
             array_push($arr,"f");
             print_r($arr);
             print("<br>");
@@ -90,7 +90,7 @@
             print("<br>");
             print($arr1["id"]);
             print("<br>");
-            print($arr1["nome"]);
+            print($arr1["nomes"][0]);
 
             $buffer =  array("id"=> 1, "nome"=>"Ially");
             $objeto = json_decode(json_encode($buffer));
@@ -98,6 +98,11 @@
             print_r($objeto);
             print("<br>");
             echo $objeto->nome;
+            print("<br>");
+
+            for ($i = 0; $i < count($arr1["nomes"]); $i++) {
+                echo "Nome: " . $arr1["nomes"][$i] . " ";
+            }
         ?>  
     </body>
 </html>
