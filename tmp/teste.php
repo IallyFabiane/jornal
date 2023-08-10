@@ -66,13 +66,17 @@
 
             switch ($num1) {
                 case 1:
-                    echo '<br>O valor de num1 é 1.';
+                    echo '<br>O valor de num1 é 1.<br>';
                     break;
                 default:
-                    echo 'Fim...';
+                    echo 'Fim... ';
                     break;
             }
            
-        ?>
+            $num = 5;
+        for($i = 0; $i < $num; $i++) {
+            echo strval($i) . " é menor que 5.<br> ";
+        }
+        ?>  
     </body>
 </html>
