@@ -74,9 +74,16 @@
             }
            
             $num = 5;
-        for($i = 0; $i < $num; $i++) {
-            echo strval($i) . " é menor que 5.<br> ";
-        }
+
+            for($i = 0; $i < $num; $i++) {
+                echo strval($i) . " é menor que 5.<br> "; /*strval é usado para converter para string */
+            }
+
+            $arr = array("a", "b", "c"); /*pode ser escrito também assim: $arr = [elements] */
+            $arr[] = "d";
+            $arr[4] = "e";
+            array_push($arr,"f");
+            print_r($arr);
         ?>  
     </body>
 </html>
