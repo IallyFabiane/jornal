@@ -82,8 +82,15 @@
             $arr = array("a", "b", "c"); /*pode ser escrito também assim: $arr = [elements] */
             $arr[] = "d";
             $arr[4] = "e";
+            $arr1 = array("id"=> 1, "nome"=>"Ially");
             array_push($arr,"f");
             print_r($arr);
+            print("<br>");
+            print_r($arr1);
+            print("<br>");
+            print($arr1["id"]);
+            print("<br>");
+            print($arr1["nome"]);
         ?>  
     </body>
 </html>
