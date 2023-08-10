@@ -91,6 +91,13 @@
             print($arr1["id"]);
             print("<br>");
             print($arr1["nome"]);
+
+            $buffer =  array("id"=> 1, "nome"=>"Ially");
+            $objeto = json_decode(json_encode($buffer));
+            print("<br>");
+            print_r($objeto);
+            print("<br>");
+            echo $objeto->nome;
         ?>  
     </body>
 </html>
