@@ -92,7 +92,7 @@
             print("<br>");
             print($arr1["nomes"][0]);
 
-            $buffer =  array("id"=> 1, "nome"=>"Ially");
+            $buffer = array("id"=> 1, "nomes"=>array("Ially", "Fabiane"));
             $objeto = json_decode(json_encode($buffer));
             print("<br>");
             print_r($objeto);
@@ -101,8 +101,13 @@
             print("<br>");
 
             for ($i = 0; $i < count($arr1["nomes"]); $i++) {
-                echo "Nome: " . $arr1["nomes"][$i] . " ";
+                echo "Nome: " . $arr1["nomes"][$i] . "<br>";
             }
+
+            foreach($objeto->nomes as $buffer) {
+                print_r($buffer);
+            }
+
         ?>  
     </body>
 </html>
