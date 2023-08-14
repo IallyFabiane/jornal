@@ -97,7 +97,7 @@
             print("<br>");
             print_r($objeto);
             print("<br>");
-            echo $objeto->nome;
+            echo $objeto->nomes[0];
             print("<br>");
 
             for ($i = 0; $i < count($arr1["nomes"]); $i++) {
@@ -117,6 +117,23 @@
                 echo "Valor do Contato: " . $valor . "\n";
             }  
            
+            $frutas = (object) array(
+                "tropical" => "melancia",
+                "vermelha" => "framboesa",
+                "cítrica" => "laranja"
+            );
+            
+            foreach ($frutas as $chave => $valor) {
+                echo "Tipo de Fruta: " . $chave . "\n";
+                echo "Nome da Fruta: " . $valor . "\n";
+            }
+            
+            /*Essa sintaxe é uma forma simplificada de criar objetos em PHP e é útil quando você precisa de objetos simples sem criar uma classe completa. Se você precisar de mais funcionalidade ou lógica, é recomendado criar suas próprias classes.
+
+
+
+
+ */
             
         ?>  
     </body>
