@@ -104,10 +104,20 @@
                 echo "Nome: " . $arr1["nomes"][$i] . "<br>";
             }
 
-            foreach($objeto->nomes as $buffer) {
-                print_r($buffer);
-            }
+            $obj = json_decode(file_get_contents(dirname(__FILE__) . "/exemplo.json"));
 
+            echo "ID: " . $obj->id . "\n";
+            echo "Nome: " . $obj->nome . "\n";
+            
+            foreach ($obj->contatos as $contato) {
+                $tipo = key($contato);
+                $valor = $contato->$tipo;
+                
+                echo "Tipo de Contato: " . $tipo . "\n";
+                echo "Valor do Contato: " . $valor . "\n";
+            }  
+           
+            
         ?>  
     </body>
 </html>
